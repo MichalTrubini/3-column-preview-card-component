@@ -102,7 +102,7 @@ body {
 
     .card {
         width:30.7rem;
-        
+
         &__link--container {
             margin-top: 8.3rem;
         }
@@ -111,6 +111,10 @@ body {
             border:2px solid white;
             box-sizing:unset ;
             margin: -2px;
+        }
+
+        &__heading {
+            line-height: 4.788rem;
         }
     }
 

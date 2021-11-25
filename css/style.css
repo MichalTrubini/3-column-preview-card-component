@@ -139,6 +139,9 @@ body {
             box-sizing: unset;
     margin: -2px;
   }
+  .card__heading {
+    line-height: 4.788rem;
+  }
   .card--one {
     border-radius: 0.8rem 0 0 0.8rem;
   }
