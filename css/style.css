@@ -22,6 +22,7 @@ body {
   font-family: 'Lexend Deca', sans-serif;
   font-size: 1.5rem;
   text-align: left;
+  font-weight: 400;
 }
 
 .main {
@@ -38,21 +39,25 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 1rem;
   margin: auto;
-  width: 100%;
+  padding: 8.8rem 2.4rem;
+}
+
+.container {
+  background: #e38826;
+  border-radius: 0.8rem;
 }
 
 .card {
-  max-width: 35rem;
-  padding: 5rem;
+  padding: 4.8rem;
+  border-radius: 0.8rem;
 }
 
 .card__heading {
   color: #f2f2f2;
   font-family: 'Big Shoulders Display', sans-serif;
-  font-size: 3rem;
-  margin: 3rem 0;
+  font-size: 4rem;
+  margin: 3.5rem 0 2.5rem;
   text-transform: uppercase;
 }
 
@@ -63,19 +68,20 @@ body {
 
 .card__link {
   background: #f2f2f2;
-  border-radius: 2rem;
+  border-radius: 2.5rem;
   display: inline-block;
-  padding: 1rem 2rem;
+  line-height: 2.5rem;
+  padding: 1.1rem 3.15rem 1.2rem;
   text-transform: capitalize;
 }
 
 .card__link--container {
-  margin-top: 4rem;
+  margin-top: 2.5rem;
 }
 
 .card--one {
   background: #e38826;
-  border-radius: 0.5rem 0.5rem 0 0;
+  border-radius: 0.8rem 0.8rem 0 0;
 }
 
 .card--two {
@@ -84,7 +90,7 @@ body {
 
 .card--three {
   background: #004241;
-  border-radius: 0 0 0.5rem 0.5rem;
+  border-radius: 0 0 0.8rem 0.8rem;
 }
 
 .link--one {
@@ -97,16 +103,6 @@ body {
 
 .link--three {
   color: #004241;
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.attribution a {
-  color: #3e52a3;
 }
 
 @media (min-width: 1000px) {
@@ -139,10 +135,10 @@ body {
     margin: -2px;
   }
   .card--one {
-    border-radius: 0.5rem 0 0 0.5rem;
+    border-radius: 0.8rem 0 0 0.8rem;
   }
   .card--three {
-    border-radius: 0 0.5rem 0.5rem 0;
+    border-radius: 0 0.8rem 0.8rem 0;
   }
   .link--one:hover {
     background: #e38826;
