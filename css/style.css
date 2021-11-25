@@ -1,0 +1,160 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 1rem;
+  margin: auto;
+  width: 100%;
+}
+
+.card {
+  max-width: 35rem;
+  padding: 5rem;
+}
+
+.card__heading {
+  color: #f2f2f2;
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 3rem;
+  margin: 3rem 0;
+  text-transform: uppercase;
+}
+
+.card__paragraph {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 2.5rem;
+}
+
+.card__link {
+  background: #f2f2f2;
+  border-radius: 2rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+}
+
+.card__link--container {
+  margin-top: 4rem;
+}
+
+.card--one {
+  background: #e38826;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card--two {
+  background: #006970;
+}
+
+.card--three {
+  background: #004241;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.link--one {
+  color: #e38826;
+}
+
+.link--two {
+  color: #006970;
+}
+
+.link--three {
+  color: #004241;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 1000px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 100vh;
+  }
+  .card {
+    max-width: 28rem;
+  }
+  .card__link--container {
+    margin-top: 7rem;
+  }
+  .card__link:hover {
+    border: 2px solid white;
+    -webkit-box-sizing: unset;
+            box-sizing: unset;
+    margin: -2px;
+  }
+  .card--one {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .card--three {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  .link--one:hover {
+    background: #e38826;
+    color: #f2f2f2;
+  }
+  .link--two:hover {
+    background: #006970;
+    color: #f2f2f2;
+  }
+  .link--three:hover {
+    background: #004241;
+    color: #f2f2f2;
+  }
+}
+/*# sourceMappingURL=style.css.map */

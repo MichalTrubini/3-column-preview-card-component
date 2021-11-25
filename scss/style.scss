@@ -1,0 +1,129 @@
+@import 'variables','init';
+
+@mixin flexCenter($direction) {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:$direction;
+}
+
+body {
+    background: $background-body;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size:1.5rem;
+    text-align: left;
+}
+
+.main {
+    @include flexCenter(column);
+
+    border-radius: 1rem;
+    margin: auto;
+    width:100%;
+}
+
+.card {
+    max-width: 35rem;
+    padding:5rem;
+
+    &__heading {
+        color:$color-heading;
+        font-family: 'Big Shoulders Display', sans-serif;
+        font-size: 3rem;
+        margin: 3rem 0;
+        text-transform: uppercase;
+    }
+
+    &__paragraph {
+        color:$color-text-main;
+        line-height:2.5rem;
+    }
+
+    &__link {
+        background:$background-button;
+        border-radius: 2rem;
+        display:inline-block;
+    
+        padding:1rem 2rem;
+        text-transform: capitalize; 
+    }
+
+    &__link--container {
+        margin-top:4rem;
+    }
+}
+
+.card--one {
+    background:$background-card-one;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card--two {
+    background:$background-card-two;
+}
+
+.card--three {
+    background:$background-card-three;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.link--one {
+    color: $background-card-one;
+}
+
+.link--two {
+    color:$background-card-two;
+}
+
+.link--three {
+    color:$background-card-three;
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 1rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width:1000px) {
+
+    .main {
+    @include flexCenter(row);
+    
+    height:100vh;
+    }
+
+    .card {
+        max-width:28rem;
+
+        &__link--container {
+            margin-top: 7rem;
+        }
+
+        &__link:hover {
+            border:2px solid white;
+            box-sizing:unset ;
+            margin: -2px;
+        }
+    }
+
+    .card--one {
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+    
+    .card--three {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    .link--one:hover {
+        background: $background-card-one;
+        color:$background-button;
+    }
+    
+    .link--two:hover {      
+        background:$background-card-two;
+        color:$background-button;
+    }
+    
+    .link--three:hover {
+        background:$background-card-three;
+        color:$background-button;
+    }
+}
